@@ -1,0 +1,16 @@
+.boxShadow1 {
+    width: 350px;
+    height: 300px;
+    border: transparent;
+    box-shadow: 14px 14px 8px blue;
+    margin-bottom: 200px;
+    
+}
+
+.boxShadow2 {
+    width: 350px;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: -14px -14px 8px red;
+    
+}

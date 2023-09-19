@@ -1,0 +1,54 @@
+:root {
+    --bg-color: linear-gradient(90deg, green, yellow)
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+.title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background-image: var(--bg-color);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: bg 3s infinite alternate;
+    background-size: 400%;
+}
+
+@keyframes bg {
+    0% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+      font-size: 3rem;
+      line-height: 50px;
+      font-weight: 700;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 1023) {
+    .title {
+      font-size: 2rem;
+      line-height: 36px;
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1rem;
+      line-height: 16px;
+      font-weight: 400;
+    }
+}
